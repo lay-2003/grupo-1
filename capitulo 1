@@ -1,0 +1,25 @@
+/*NumPy =   biblioteca essencial para computação científica em Python, 
+oferecendo recursos para trabalhar com matrizes multidimensionais, 
+funções matemáticas avançadas e geração de números aleatórios..
+-funcionou*/
+import numpy as np
+x = np.array([[1, 2, 3], [4, 5, 6]])
+print("x:\n{}".format(x))
+/*saída: 
+  x:
+[[1 2 3]
+[4 5 6]]
+*/
+/*SciPy= lida com matrizes esparsas. Matrizes esparsas são usadas quando você 
+tem uma matriz 2D que contém principalmente valores zero.
+-funcionou*/
+from scipy import sparse
+# Create a 2D NumPy array with a diagonal of ones, and zeros everywhere else
+eye = np.eye(4)
+print("NumPy array:\n{}".format(eye))
+/*saída:
+NumPy array:
+[[ 1. 0. 0. 0.]
+[ 0. 1. 0. 0.]
+[ 0. 0. 1. 0.]
+[ 0. 0. 0. 1.]]
